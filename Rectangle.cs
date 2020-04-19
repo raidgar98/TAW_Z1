@@ -18,9 +18,9 @@ namespace Z1
 			b = Double.Parse(B);
 		}
 
-		public virtual void show_data()
+		public virtual string show_data()
 		{
-			System.Console.WriteLine(this.ToString());
+			return this.ToString();
 		}
 
 		public virtual double compute_perimeter()
@@ -37,5 +37,7 @@ namespace Z1
 		{
 			return $"A: {this.a}\nB: {this.b}\n";
 		}
+
+		public virtual int get_ID() { return 1; }
 	}
 }

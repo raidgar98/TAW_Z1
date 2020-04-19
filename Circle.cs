@@ -14,9 +14,9 @@ namespace Z1
 			r = Double.Parse(R);
 		}
 
-		public virtual void show_data()
+		public virtual string show_data()
 		{
-			System.Console.WriteLine(this.ToString());
+			return this.ToString();
 		}
 
 		public virtual double compute_perimeter()
@@ -33,5 +33,7 @@ namespace Z1
 		{
 			return $"R: {this.r}\n";
 		}
+
+		public virtual int get_ID() { return 3; }
 	}
 }
